@@ -1,0 +1,132 @@
+<!doctype html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<title>Курс JavaScript</title>
+	<script>
+		//1-8
+		// let surname = 'Карамзин ';
+		// let name = 'Виктор ';
+		// let patronymic = 'Геннадьевич';
+		// let ocupation = 'Преподавтель специальных дисциплин';
+		// let degree = 'Высшее';
+		// let category = 'Первая';
+		// let education = 'Московский государственный институт электронной техники (технический университет)';
+		// let discipline = 'Информатика';
+		// let primech = 'none';
+
+		//1-9
+		// let inf=['Карамзин ', 'Виктор ', 'Геннадьевич', 'Преподавтель специальных дисциплин', 'Высшее', 
+		// 'Первая', 'Московский государственный институт электронной техники (технический университет)',
+		// 'Информатика'];
+
+
+
+		//1-10
+		// let inf={
+		// 	surname: '<b>'+'Карамзин '+'</b>',
+		// 	name: '<b>'+'Виктор '+'</b>',
+		// 	patronymic: '<b>'+'Геннадьевич'+'</b>',
+		// 	ocupation: '<br>'+'<i>'+'Должность: '+'</i>'+'Преподавтель специальных дисциплин',
+		// 	degree: '<br>'+'<i>'+'Уровень образования: '+'</i>'+'Высшее',
+		// 	category: '<br>'+'<i>'+'Категория: '+'</i>'+'Первая',
+		// 	education: '<br>'+'<i>'+'Образование: '+'</i>'+'Московский государственный институт электронной техники (технический университет)',
+		// 	discipline: '<br>'+'<i>'+'Дисциплина: '+'</i>'+'Информатика'
+		// };
+
+
+
+		//1-11
+		// let inf={
+		// 	surname: '<b>'+'Карамзин '+'</b>',
+		// 	name: '<b>'+'Виктор '+'</b>',
+		// 	patronymic: '<b>'+'Геннадьевич'+'</b>',
+		// 	ocupation: '<br>'+'<i>'+'Должность: '+'</i>'+'Преподавтель специальных дисциплин',
+		// 	degree: '<br>'+'<i>'+'Уровень образования: '+'</i>'+'Высшее',
+		// 	category: '<br>'+'<i>'+'Категория: '+'</i>'+'Первая',
+		// 	education: '<br>'+'<i>'+'Образование: '+'</i>'+'Московский государственный институт электронной техники (технический университет)',
+		// 	discipline: '<br>'+'<i>'+'Дисциплина: '+'</i>'+'Информатика'
+		// };
+		// let result=`${inf.surname} 
+		// ${inf.name}
+		// ${inf.patronymic}
+		// ${inf.ocupation}
+		// ${inf.degree}
+		// ${inf.category}
+		// ${inf.education}
+		// ${inf.discipline}
+		// `;
+
+
+		//1-12
+		let discipline=['Информатика','Основы программирования','Инженерная графика'];
+		let inf={
+			surname: '<b>'+'Карамзин '+'</b>',
+			name: '<b>'+'Виктор '+'</b>',
+			patronymic: '<b>'+'Геннадьевич'+'</b>',
+			ocupation: '<br>'+'<i>'+'Должность: '+'</i>'+'Преподавтель специальных дисциплин',
+			degree: '<br>'+'<i>'+'Уровень образования: '+'</i>'+'Высшее',
+			category: '<br>'+'<i>'+'Категория: '+'</i>'+'Первая',
+			education: '<br>'+'<i>'+'Образование: '+'</i>'+'Московский государственный институт электронной техники (технический университет)',
+			discipline,
+			primech: '<br>'+'<i>'+'Примечание:'+'</i>'
+		};
+		let result=`${inf.surname} 
+		${inf.name}
+		${inf.patronymic}
+		${inf.ocupation}
+		${inf.degree}
+		${inf.category}
+		${inf.education}
+		<br><i>Дисциплина: </i>
+		<ul> <li>${inf.discipline[0]}</li>
+		<li> ${inf.discipline[1]}</li>
+		<li>${inf.discipline[2]}</li> </ul>
+		${inf.primech}
+		`;
+	</script>
+</head>
+
+<body>
+	
+	<header>
+		<h1 align = "center">Введение в JavaScript</h1>
+	</header>	
+	
+	<div class="content">
+		<script>
+			//1-8
+		// document.write('<b>'+surname+name+patronymic+'</b>');
+		// document.write('<br>'+'<i>'+'Должность: '+'</i>'+ocupation);
+		// document.write('<br>'+'<i>'+'Уровень образования: '+'</i>'+degree);
+		// document.write('<br>'+'<i>'+'Категория: '+'</i>'+category);
+		// document.write('<br>'+'<i>'+'Образование: '+'</i>'+education);
+		// document.write('<br>'+'<i>'+'Дисциплина: '+'</i>'+discipline);
+		
+			//1-9
+		// document.write('<b>'+inf[0]+inf[1]+inf[2]+'</b>');
+		// document.write('<br>'+'<i>'+'Должность: '+'</i>'+inf[3]);
+		// document.write('<br>'+'<i>'+'Уровень образования: '+'</i>'+inf[4]);
+		// document.write('<br>'+'<i>'+'Категория: '+'</i>'+inf[5]);
+		// document.write('<br>'+'<i>'+'Образование: '+'</i>'+inf[6]);
+		// document.write('<br>'+'<i>'+'Дисциплина: '+'</i>'+inf[7]);
+
+
+
+		//1-10
+		//document.write(inf.surname+inf.name+inf.patronymic+inf.ocupation+inf.degree+inf.category+inf.education+inf.discipline);
+		
+
+
+		//1-11, 1-12
+		document.write(result);
+		</script>
+	</div>
+	
+	<footer align = "center">
+		<h3>Добро пожаловать на pechora_PROger</h3>
+		<a href="https://vk.com/pechora_proger" target="__blank">pechora_PROger</a>
+	</footer>
+
+</body>
+</html>
